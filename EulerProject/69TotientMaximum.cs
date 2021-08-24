@@ -30,7 +30,7 @@ namespace EulerProject
         }
         private int RelativePrimeCount (int n)
         {
-            return Enumerable.Range(1, n).Where(i => !IsCoprime(n,i)).Count();
+            return Enumerable.Range(1, n).Count(i => !IsCoprime(n,i));
         }
 
         private bool IsCoprime(int x, int y)
@@ -44,11 +44,11 @@ namespace EulerProject
             return x % y == 0 || Enumerable.Range(2,(int)Math.Sqrt(y)).Any(i => x % i == 0 && y % i == 0);
         }
 
-        private IEnumerable<int> GetListPrime(int n)
+        public static IEnumerable<int> GetListPrime(int n)
         {
             return Enumerable.Range(2, n - 1).Where(IsPrime);
         }
-        private bool IsPrime(int n)
+        private static bool IsPrime(int n)
         {
             if (n == 1 || n == 0)   
                 return false;
