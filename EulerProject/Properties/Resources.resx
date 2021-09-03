@@ -130,4 +130,7 @@
   <data name="p099_base_exp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\p099_base_exp.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="p102_triangles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\p102_triangles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>
