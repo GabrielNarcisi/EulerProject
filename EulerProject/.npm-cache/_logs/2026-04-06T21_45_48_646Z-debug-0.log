@@ -1,0 +1,84 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@9.8.1
+2 info using node@v18.18.0
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 3ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\git-workspace\EulerProject\EulerProject\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:C:\Users\gabriel.narcisi\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\gabriel.narcisi\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 12ms
+17 timing npm:load:configload Completed in 12ms
+18 timing config:load:flatten Completed in 2ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm exec tsx 112BouncyNumbers.ts
+22 verbose argv "exec" "--yes" "--" "tsx" "112BouncyNumbers.ts"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:c:\git-workspace\EulerProject\EulerProject\.npm-cache\_logs\2026-04-06T21_45_48_646Z-
+26 verbose logfile c:\git-workspace\EulerProject\EulerProject\.npm-cache\_logs\2026-04-06T21_45_48_646Z-debug-0.log
+27 timing npm:load:logFile Completed in 33ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 79ms
+31 timing arborist:ctor Completed in 0ms
+32 silly logfile done cleaning log files
+33 http fetch GET 200 https://registry.npmjs.org/tsx 2093ms (cache miss)
+34 timing command:exec Completed in 2123ms
+35 verbose type system
+36 verbose stack FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/tsx: EPERM: operation not permitted, unlink 'c:\git-workspace\EulerProject\EulerProject\.npm-cache\_cacache\tmp\fe91cf2b'
+36 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:170:15
+36 verbose stack     at async Response.json (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:75:17)
+36 verbose stack     at async RegistryFetcher.packument (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:94:25)
+36 verbose stack     at async RegistryFetcher.manifest (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:118:23)
+36 verbose stack     at async getManifest (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:30:22)
+36 verbose stack     at async missingFromTree (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:59:22)
+36 verbose stack     at async C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:168:32
+36 verbose stack     at async Promise.all (index 0)
+36 verbose stack     at async exec (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:166:3)
+36 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli-entry.js:61:5)
+37 verbose cwd C:\git-workspace\EulerProject\EulerProject
+38 verbose Windows_NT 10.0.22621
+39 verbose node v18.18.0
+40 verbose npm  v9.8.1
+41 error code EPERM
+42 error syscall unlink
+43 error path c:\git-workspace\EulerProject\EulerProject\.npm-cache\_cacache\tmp\fe91cf2b
+44 error errno EPERM
+45 error FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/tsx: EPERM: operation not permitted, unlink 'c:\git-workspace\EulerProject\EulerProject\.npm-cache\_cacache\tmp\fe91cf2b'
+45 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:170:15
+45 error     at async Response.json (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:75:17)
+45 error     at async RegistryFetcher.packument (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:94:25)
+45 error     at async RegistryFetcher.manifest (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:118:23)
+45 error     at async getManifest (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:30:22)
+45 error     at async missingFromTree (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:59:22)
+45 error     at async C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:168:32
+45 error     at async Promise.all (index 0)
+45 error     at async exec (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:166:3)
+45 error     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli-entry.js:61:5) {
+45 error   code: 'EPERM',
+45 error   errno: 'EPERM',
+45 error   syscall: 'unlink',
+45 error   path: 'c:\\git-workspace\\EulerProject\\EulerProject\\.npm-cache\\_cacache\\tmp\\fe91cf2b',
+45 error   type: 'system'
+45 error }
+46 error
+46 error The operation was rejected by your operating system.
+46 error It's possible that the file was already in use (by a text editor or antivirus),
+46 error or that you lack permissions to access it.
+46 error
+46 error If you believe this might be a permissions issue, please double-check the
+46 error permissions of the file and its containing directories, or try running
+46 error the command again as root/Administrator.
+47 verbose exit 1
+48 timing npm Completed in 2453ms
+49 verbose code 1
+50 error A complete log of this run can be found in: c:\git-workspace\EulerProject\EulerProject\.npm-cache\_logs\2026-04-06T21_45_48_646Z-debug-0.log
